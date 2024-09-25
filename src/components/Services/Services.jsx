@@ -6,7 +6,7 @@ import { IoMdImages } from "react-icons/io";
 import { CiMobile3 } from "react-icons/ci";
 import { IoRocketOutline } from "react-icons/io5";
 
-const Services = () => {
+const Service = () => {
   const serviceData = [
     {
       icon: <AiOutlinePieChart />,
@@ -74,4 +74,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Service;

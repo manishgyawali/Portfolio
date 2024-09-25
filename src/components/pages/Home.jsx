@@ -1,9 +1,15 @@
 import React from "react";
 import bannerimg from "../../assets/Images/banner.png";  
+import Aboutme from "../Aboutme/Aboutme";
+import Blog from "../Blog/Blog";
+import Service from "../Services/Services";
+import Pricing from "../Pricing/Pricing";
+
 
 const Home = () => {
   return (
-    <div className="bg-gray-100">
+<div>
+<div className="bg-gray-100">
       <div className="w-11/12 mx-auto py-24 grid grid-cols-2 gap-10">
         <div className="flex flex-col gap-5">
          <div className="flex flex-col gap-5">
@@ -27,6 +33,13 @@ const Home = () => {
         </div>
       </div>
     </div>
+
+    <Aboutme/>
+    <Service/>
+    <Pricing/>
+    <Blog/>
+</div>
+    
   );
 };
 

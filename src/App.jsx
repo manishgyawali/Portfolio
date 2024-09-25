@@ -12,7 +12,7 @@ import Pricing from './components/pages/Pricing';
 import Nav from './components/common/Nav/Nav';
 import Footer from './components/common/Footer/Footer';
 import ClientProject from './components/common/Client_project/Clientproject';
-import Home from './components/Home/Home';
+import Home from './components/pages/Home';
 
 const App = () => {
   return (
@@ -36,11 +36,7 @@ const App = () => {
       <Footer/> 
 
       </BrowserRouter>
-      <Home/>
-      <Aboutme/>
-      <ClientProject/> 
-      <Services/>
-      <Blog/>
+      
      
     </div>
   )

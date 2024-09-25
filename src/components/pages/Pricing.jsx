@@ -1,8 +1,11 @@
 import React from 'react'
+import PricingH from './../Pricing/Pricing';
 
 const Pricing = () => {
   return (
-    <div>Pricing</div>
+    <div>
+      <PricingH/>
+    </div>
   )
 }
 
