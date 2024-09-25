@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-black text-gray-500">
-      <div className="w-11/12 py-24 mx-auto  grid grid-cols-5 gap-10">
+      <div className="w-11/12 py-24 mx-auto grid grid-cols-2 md:grid-cols-4  lg:grid-cols-5 gap-10">
         <div className="grid col-span-2 gap-5">
           <h1 className="text-xl text-white font-semibold">About Me</h1>
           <p className="w-11/12 ">
@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="col-span-2 flex flex-col gap-5">
           <h1 className="text-xl text-white font-semibold">NewsLetter</h1>
           <p className="">Stay updated with our latest trends</p>
-          <div className="flex items-center justify-between w-full  bg-gray-100 rounded-md shadow-md">
+          <div className="flex items-center justify-between w-10/12 md:w-full  bg-gray-100 rounded-md shadow-md">
             <input
               type="email"
               placeholder="Enter Email Address"

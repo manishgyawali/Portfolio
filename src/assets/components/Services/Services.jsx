@@ -56,14 +56,14 @@ const Services = () => {
             have been made and kept, or made and neglected.
           </p>
         </div>
-        <div className="grid grid-cols-3 gap-10 mt-10 ">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 ">
           {serviceData.map((val, i) => (
             <div key={i} className="grid gap-6">
-              <div className="text-4xl grid items-center justify-center ">
+              <div className="text-4xl flex flex-col gap-5  items-center text-center justify-center hover:text-[#56c1ff] transition-">
                 {val.icon}
+                <h1 className="font-semibold text-xl ">{val.title}</h1>
               </div>
               <div className=" text-center flex flex-col gap-5">
-                <h1 className="font-semibold text-xl ">{val.title}</h1>
                 <p className="text-gray-400">{val.description}</p>
               </div>
             </div>
