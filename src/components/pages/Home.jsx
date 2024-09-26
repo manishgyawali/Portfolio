@@ -4,6 +4,8 @@ import Aboutme from "../Aboutme/Aboutme";
 import Blog from "../Blog/Blog";
 import Service from "../Services/Services";
 import Pricing from "../Pricing/Pricing";
+import Projects from './../Projects/Projects';
+import CountUps from './../CountUp/CountUps';
 
 
 const Home = () => {
@@ -36,6 +38,8 @@ const Home = () => {
 
     <Aboutme/>
     <Service/>
+    <CountUps />
+    <Projects/>
     <Pricing/>
     <Blog/>
 </div>

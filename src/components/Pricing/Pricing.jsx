@@ -51,7 +51,7 @@ const PricingH = () => {
           they.
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-5 bg-[#F9F9FF] ">
+      <div className="grid  md:grid-cols-2 lg:grid-cols-4  gap-5 bg-[#F9F9FF] ">
         {pricingData.map((val, i) => (
           <div
             key={i}
