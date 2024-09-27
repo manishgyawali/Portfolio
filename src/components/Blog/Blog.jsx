@@ -77,7 +77,7 @@ const Blog = () => {
               <h2>{val.comments}</h2>
             </div>
            </div>
-            <div className="mt-3  flex flex-col gap-3 p-3" >
+            <div className="mt-3  flex flex-col gap-3 px-5 py-3" >
               <h1 className="font-semibold text-xl">{val.heading}</h1>
               <p className="text-gray-500 ">{val.parag}</p>
             </div>

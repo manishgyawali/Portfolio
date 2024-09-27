@@ -5,7 +5,7 @@ const CountUps = () => {
   return (
     <div>
       <div className="bg-gradient-to-r from-[#7b5eea] to-[#56c1ff]">
-        <div className="w-9/12 mx-auto grid grid-cols-4 py-24">
+        <div className="w-9/12 mx-auto grid grid-cols-2 gap-5 md:grid-cols-2   lg:grid-cols-4 py-24">
           <div>
             <h1 className="text-4xl text-white font-semibold">
               {" "}
