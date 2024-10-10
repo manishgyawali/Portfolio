@@ -3,11 +3,11 @@ import AboutImg from "../../assets/Images/mainimg2.png";
 
 const Aboutme = () => {
   return (
-    <div className="grid grid-cols-2  w-11/12 mx-auto py-24 gap-10">
+    <div className="grid grid-cols-2  w-11/12 mx-auto py-14 gap-10">
       <div>
         <img src={AboutImg} alt="" className=" w-96 object-cover" />
       </div>
-      <div className="flex flex-col gap-10 ">
+      <div className="flex flex-col gap-10 items-center justify-center ">
         <div className="flex flex-col gap-5">
           <h2>ABOUT ME</h2>
           <h1 className="text-4xl font-semibold">Personal Details</h1>
@@ -20,7 +20,7 @@ const Aboutme = () => {
           </p>
         </div>
         <div>
-          <button className="bg-gradient-to-r from-[#7b5eea] to-[#56c1ff] text-white px-7 py-2 text-sm">
+          <button className="bg-gradient-to-r from-[#7b5eea] to-[#56c1ff] text-white rounded px-7 py-2 text-sm">
             VIEW FULL DETAILS
           </button>
         </div>

@@ -1,44 +1,102 @@
-import React from "react";
-import  {Link}  from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowDropdown(true);
+    setTimeout(() => {
+      setShowDropdown(false);
+    }, 4000); 
+  };
+
   return (
-    <nav className="shadow-md ">
-      <div className="flex justify-between items-center  py-6 cursor-pointer w-11/12 mx-auto  ">
+    <nav className="shadow-md">
+      <div className="flex justify-between items-center py-6 cursor-pointer w-11/12 mx-auto">
         <div>
           <h1 className="font-bold text-xl">Personal</h1>
         </div>
         <div>
-          <ul className="flex gap-7  text-xs cursor-pointer ">
+          <ul className="flex gap-7 text-xs cursor-pointer">
+            {/* HOME */}
             <Link to={"/"}>
-              {" "}
-              <span className="text-blue-400 font-semibold">HOME</span>
+              <span className="uppercase text-blue-400 font-semibold">HOME</span>
             </Link>
 
-            <Link to={"/about"} className="cursor-pointer">
-              ABOUT
-            </Link>
-            <Link to={"/services"} className="cursor-pointer">
-              SERVICES
-            </Link>
+            {/* ABOUT */}
+            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+              <Link to={"/about"}>
+                <span className="uppercase">ABOUT</span>
+              </Link>
+              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
+            </div>
 
-            <Link to={"/portfolio"} className="cursor-pointer">
-              PORTFOLIO
-            </Link>
+            {/* SERVICES */}
+            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+              <Link to={"/services"}>
+                <span className="uppercase">SERVICES</span>
+              </Link>
+              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
+            </div>
 
-            <Link to={"/pricing"} className="cursor-pointer">
-              PRICING
-            </Link>
+            {/* PORTFOLIO */}
+            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+              <Link to={"/portfolio"}>
+                <span className="uppercase">PORTFOLIO</span>
+              </Link>
+              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
+            </div>
 
-            <Link to={"/blog"} className="cursor-pointer">
-              BLOG
-            </Link>
-            <Link to={"/pages"} className="cursor-pointer">
-              PAGES
-            </Link>
-            <Link to={"/contact"} className="cursor-pointer">
-              CONTACT
-            </Link>
+            {/* PRICING */}
+            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+              <Link to={"/pricing"}>
+                <span className="uppercase">PRICING</span>
+              </Link>
+              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
+            </div>
+
+            {/* BLOG (with Dropdown) */}
+            <div
+              className="relative group cursor-pointer text-gray-600 hover:text-black"
+              onMouseEnter={handleMouseEnter}
+            >
+              <Link to={"/blog"}>
+                <span className="uppercase">BLOG</span>
+              </Link>
+              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
+
+              {/* Dropdown */}
+              {showDropdown && (
+                <div className="absolute w-[200px] left-0 px-5 bg-white shadow-md rounded-md mt-2 z-10">
+                  <ul className="py-2 ">
+                    <li className="px-5 py-2 hover:text-[#60A5FA] ">
+                      <Link to={"/bloghome"}>Blog Home</Link>
+                    </li>
+                    <li className="px-5 py-2 hover:text-[#60A5FA]">
+                      <Link to={"/blog/category-2"}>Blog Single</Link>
+                    </li>
+                  
+                  </ul>
+                </div>
+              )}
+            </div>
+
+            {/* PAGES */}
+            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+              <Link to={"/pages"}>
+                <span className="uppercase">PAGES</span>
+              </Link>
+              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
+            </div>
+
+            {/* CONTACT */}
+            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+              <Link to={"/contact"}>
+                <span className="uppercase">CONTACT</span>
+              </Link>
+              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
+            </div>
           </ul>
         </div>
       </div>
