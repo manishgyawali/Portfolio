@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Signature from "../../../assets/Images/signature.png"
 
 const Nav = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -8,16 +9,18 @@ const Nav = () => {
     setShowDropdown(true);
     setTimeout(() => {
       setShowDropdown(false);
-    }, 4000); 
+    }, 2000); 
   };
 
   return (
-    <nav className="shadow-md">
-      <div className="flex justify-between items-center py-6 cursor-pointer w-11/12 mx-auto">
+    <nav className="shadow-md sticky top-0 bg-white">
+      <div className="flex justify-between items-center py-3 cursor-pointer w-11/12 mx-auto">
         <div>
-          <h1 className="font-bold text-xl">Personal</h1>
+          {/* <h1 className="font-bold text-xl">Personal</h1> */}
+          <img src={Signature} alt=""  className="h-[46px]"/>
+
         </div>
-        <div>
+        <div className="">
           <ul className="flex gap-7 text-xs cursor-pointer">
             {/* HOME */}
             <Link to={"/"}>
@@ -25,7 +28,7 @@ const Nav = () => {
             </Link>
 
             {/* ABOUT */}
-            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+            <div className="relative group cursor-pointer  hover:text-black">
               <Link to={"/about"}>
                 <span className="uppercase">ABOUT</span>
               </Link>
@@ -33,7 +36,7 @@ const Nav = () => {
             </div>
 
             {/* SERVICES */}
-            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+            <div className="relative group cursor-pointer hover:text-black">
               <Link to={"/services"}>
                 <span className="uppercase">SERVICES</span>
               </Link>
@@ -41,7 +44,7 @@ const Nav = () => {
             </div>
 
             {/* PORTFOLIO */}
-            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+            <div className="relative group cursor-pointer  hover:text-black">
               <Link to={"/portfolio"}>
                 <span className="uppercase">PORTFOLIO</span>
               </Link>
@@ -49,7 +52,7 @@ const Nav = () => {
             </div>
 
             {/* PRICING */}
-            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+            <div className="relative group cursor-pointer  hover:text-black">
               <Link to={"/pricing"}>
                 <span className="uppercase">PRICING</span>
               </Link>
@@ -58,7 +61,7 @@ const Nav = () => {
 
             {/* BLOG (with Dropdown) */}
             <div
-              className="relative group cursor-pointer text-gray-600 hover:text-black"
+              className="relative group cursor-pointer  hover:text-black"
               onMouseEnter={handleMouseEnter}
             >
               <Link to={"/blog"}>
@@ -83,7 +86,7 @@ const Nav = () => {
             </div>
 
             {/* PAGES */}
-            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+            <div className="relative group cursor-pointer  hover:text-black">
               <Link to={"/pages"}>
                 <span className="uppercase">PAGES</span>
               </Link>
@@ -91,7 +94,7 @@ const Nav = () => {
             </div>
 
             {/* CONTACT */}
-            <div className="relative group cursor-pointer text-gray-600 hover:text-black">
+            <div className="relative group cursor-pointer hover:text-black">
               <Link to={"/contact"}>
                 <span className="uppercase">CONTACT</span>
               </Link>

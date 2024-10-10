@@ -6,6 +6,7 @@ import Service from "../Services/Services";
 import Pricing from "../Pricing/Pricing";
 import Projects from "./../Projects/Projects";
 import CountUps from "./../CountUp/CountUps";
+import Testimonial from "../Testimonials/Testimonial";
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
         <div className="w-11/12 mx-auto py-24 grid grid-cols-2 gap-10">
           <div className="flex flex-col gap-5 ">
             <div className="flex flex-col gap-5 ">
-              <h3 className="text-gray-600">THIS IS ME</h3>
-              <h1 className="text-5xl font-semibold">MANISH GYAWALI</h1>
+              <h3 className="text-gray-600 ">THIS IS ME</h3>
+              <h1 className="text-5xl font-semibold ">MANISH GYAWALI</h1>
               <p className="text-gray-400">
                 You will begin to realise why this exercise is called the
                 Dickens Pattern with reference to the ghost showing Scrooge some
@@ -37,6 +38,7 @@ const Home = () => {
       <Aboutme />
       <Service />
       <CountUps />
+      <Testimonial />
       <Projects />
       <Pricing />
       <Blog />
