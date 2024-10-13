@@ -1,6 +1,9 @@
 import React from 'react'
 import { Route, Routes } from "react-router";
-
+import './index.css'; // Make sure Tailwind CSS is imported
+import '@fontsource/montserrat'; 
+// In your App.jsx
+import '@fontsource/playfair-display';
 import Blog from './components/Blog/Blog'
 import Aboutme from './components/Aboutme/Aboutme';
 import { BrowserRouter } from 'react-router-dom';

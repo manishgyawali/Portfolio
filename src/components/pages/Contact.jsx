@@ -2,12 +2,17 @@ import React from "react";
 import { IoIosHome } from "react-icons/io";
 import { IoCallOutline } from "react-icons/io5";
 import { AiTwotoneMail } from "react-icons/ai";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 const Contact = () => {
   return (
     <div className="flex flex-col gap-10">
-      <div className="p-24 text-center bg-gradient-to-r from-[#7b5eea] to-[#56c1ff]">
+      <div className="p-24  flex flex-col gap-5 text-center bg-gradient-to-r from-[#7b5eea] to-[#56c1ff]">
         <h1 className="text-4xl font-semibold text-white">CONTACT</h1>
+        <div className="text-sm text-white flex gap-3 items-center justify-center">
+          <button>Home</button><FaArrowRightLong /><button>Contact</button>
+        </div>
       </div>
       {/* Google Map */}
       <div className="h-[500px] w-11/12 mx-auto shadow">
