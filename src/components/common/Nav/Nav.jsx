@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Signature from "../../../assets/Images/signature.png"
-
+import { useNavigate } from 'react-router-dom';
 const Nav = () => {
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -11,13 +11,18 @@ const Nav = () => {
       setShowDropdown(false);
     }, 2000); 
   };
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/'); // Change '/about-me' to the actual path of your "About Me" page
+  };
 
   return (
     <nav className="shadow-md sticky top-0 bg-white">
       <div className="flex justify-between items-center py-3 cursor-pointer w-11/12 mx-auto">
         <div>
           {/* <h1 className="font-bold text-xl">Personal</h1> */}
-          <img src={Signature} alt=""  className="h-[46px]"/>
+          <img  onClick={handleClick} src={Signature} alt=""  className="h-[46px]"/>
 
         </div>
         <div className="">
