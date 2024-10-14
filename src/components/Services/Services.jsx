@@ -5,6 +5,8 @@ import { IoCameraReverseOutline } from "react-icons/io5";
 import { IoMdImages } from "react-icons/io";
 import { CiMobile3 } from "react-icons/ci";
 import { IoRocketOutline } from "react-icons/io5";
+import PricingH from "../Pricing/Pricing";
+import Testimonial from "../Testimonials/Testimonial";
 
 const Service = () => {
   const serviceData = [
@@ -70,6 +72,8 @@ const Service = () => {
           ))}
         </div>
       </div>
+      <PricingH/>
+      <Testimonial/>
     </div>
   );
 };

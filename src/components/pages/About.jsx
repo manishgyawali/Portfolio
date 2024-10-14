@@ -1,6 +1,7 @@
 import React from "react";
 import Aboutme from "../Aboutme/Aboutme";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Testimonial from "../Testimonials/Testimonial";
 
 const About = () => {
   return (
@@ -29,6 +30,7 @@ const About = () => {
           designed in 1947 by Thomas T. Goldsmith Jr
         </p>
       </div>
+      <Testimonial/>
     </div>
   );
 };
