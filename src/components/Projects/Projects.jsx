@@ -14,7 +14,7 @@ const Projects = () => {
   const projectData = [
     {
       image: PImage,
-      name: "Room Rental Service",
+      name: "Room Rental System",
       type: "vector",
       liveLink: "https://your-live-link.com",
       codeLink: "https://github.com/your-repo",
@@ -67,7 +67,7 @@ const Projects = () => {
         </div>
         <div className="flex gap-5 text-xs justify-center cursor-pointer items-center">
           <h1>ALL</h1>
-          {["VECTOR", "RASTER", "UI/UX", "PRINTING"].map((filter) => (
+          {["VECTOR", "REACT", "UI/UX", "JAVASCRIPT"].map((filter) => (
             <div
               key={filter}
               className="relative group cursor-pointer text-gray-600 hover:text-black"

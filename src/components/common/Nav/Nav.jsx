@@ -51,7 +51,7 @@ const Nav = () => {
             {/* PORTFOLIO */}
             <div className="relative group cursor-pointer  hover:text-black">
               <Link to={"/portfolio"}>
-                <span className="uppercase">PORTFOLIO</span>
+                <span className="uppercase">PROJECTS</span>
               </Link>
               <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-black absolute bottom-[-5px] left-0" />
             </div>
