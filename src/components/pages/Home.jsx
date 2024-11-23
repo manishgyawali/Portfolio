@@ -9,6 +9,7 @@ import CountUps from "./../CountUp/CountUps";
 import Testimonial from "../Testimonials/Testimonial";
 import signature from "../../assets/Images/signature3.png";
 import { useNavigate } from "react-router-dom";
+import Banner from "../../assets/Images/bannermain.png"
 
 const Home = () => {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const Home = () => {
   return (
     <div>
       <div className="bg-gray-100">
-        <div className="w-10/12 mx-auto py-10 grid md:grid-cols-2 ">
+        {/* <div className="w-10/12 mx-auto py-10 grid md:grid-cols-2 ">
           <div className="flex flex-col gap-5 justify-center items-center">
             <div className="flex flex-col gap-5 text-center justify-center items-center">
               <h3 className="text-gray-600 ">THIS IS ME</h3>
@@ -29,17 +30,12 @@ const Home = () => {
               MANISH GYAWALI
               </h1>
               <p className="text-gray-400 font-montserrat">
-              Meet Me, a Full Stack Developer crafting sleek designs and robust solutions. Explore his work and see ideas come to life!              </p>
+              Meet Me, a Full Stack Developer crafting sleek designs and robust solutions. Explore my work and see ideas come to life!              </p>
               <h1 className="text-xl text-center animate-pulse text-gray-500 font-mono">
                 - Full Stack Developer -
               </h1>
             </div>
 
-            {/* <div className="">
-              <button className="bg-gradient-to-r from-[#7b5eea] to-[#56c1ff] rounded text-white px-7 py-2 text-sm">
-                DISCOVER ME
-              </button>
-            </div> */}
             <div className="flex items-center justify-center gap-5">
               <div className="relative group">
                 <button
@@ -108,6 +104,23 @@ const Home = () => {
               className="transition-transform duration-300 hover:scale-105 "
             />
           </div>
+        </div> */}
+
+
+        <div>
+          <img src={Banner} alt="" className="w-full object-cover" />
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
           {/* <div className="relative">
             <div className="absolute inset-0 flex flex-col justify-center items-center">
               <h1 className="text-6xl font-bold">Manish Gyawali</h1>
@@ -119,9 +132,6 @@ const Home = () => {
               className="opacity-10 h-[600px] w-[1200px] object-cover"
             />
           </div> */}
-        </div>
-      </div>
-
       <Aboutme />
       {/* <Service /> */}
       <CountUps />

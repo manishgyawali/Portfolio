@@ -3,9 +3,7 @@ import PImage from "../../assets/Images/image.png";
 import SS2 from "../../assets/Images/ss2.png"
 import SS3 from "../../assets/Images/ss3.png"
 import SS4 from "../../assets/Images/ss4.png"
-
-
-
+import SS5 from "../../assets/Images/ss5.png"
 
 import { IoMdImages } from "react-icons/io";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
@@ -15,7 +13,7 @@ const Projects = () => {
     {
       image: PImage,
       name: "Room Rental System",
-      type: "vector",
+      type: "MERN",
       liveLink: "https://your-live-link.com",
       codeLink: "https://github.com/your-repo",
     },
@@ -41,9 +39,9 @@ const Projects = () => {
       codeLink: "https://github.com/your-repo",
     },
     {
-      image: PImage,
-      name: "Room Rental Service",
-      type: "printing",
+      image: SS5,
+      name: "Admin Dashboard",
+      type: "React",
       liveLink: "https://your-live-link.com",
       codeLink: "https://github.com/your-repo",
     },
@@ -67,7 +65,7 @@ const Projects = () => {
         </div>
         <div className="flex gap-5 text-xs justify-center cursor-pointer items-center">
           <h1>ALL</h1>
-          {["VECTOR", "REACT", "UI/UX", "JAVASCRIPT"].map((filter) => (
+          {["MERN", "REACT", "UI/UX", "JAVASCRIPT"].map((filter) => (
             <div
               key={filter}
               className="relative group cursor-pointer text-gray-600 hover:text-black"
