@@ -10,6 +10,15 @@ export default {
         montserrat: ['Montserrat', 'sans-serif'],
         cursive: ['"Dancing Script"', "cursive"],
       },
+       keyframes: {
+        upDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+      },
+      animation: {
+        upDown: 'upDown 1.5s ease-in-out infinite',
+      },
       
     },
   },

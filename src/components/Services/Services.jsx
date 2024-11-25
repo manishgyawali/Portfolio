@@ -61,7 +61,7 @@ const Service = () => {
         <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 ">
           {serviceData.map((val, i) => (
             <div key={i} className="grid gap-6">
-              <div className="text-4xl flex flex-col gap-5  items-center text-center justify-center hover:text-[#56c1ff] transition duration-300 ease-in-out transform hover:scale-105">
+              <div className="text-4xl flex flex-col gap-5  items-center text-center justify-center hover:text-[#ed9728] transition duration-300 ease-in-out transform hover:scale-105">
                 {val.icon}
                 <h1 className="font-semibold text-xl cursor-pointer">{val.title}</h1>
               </div>
