@@ -1,27 +1,37 @@
 import React from "react";
-import bannerimg from "../../assets/Images/banner3.png";
 import Aboutme from "../Aboutme/Aboutme";
-import Blog from "../Blog/Blog";
-import Service from "../Services/Services";
-import Pricing from "../Pricing/Pricing";
-import Projects from "./../Projects/Projects";
 import CountUps from "./../CountUp/CountUps";
-import Testimonial from "../Testimonials/Testimonial";
-import signature from "../../assets/Images/signature3.png";
 import { useNavigate } from "react-router-dom";
 import Banner from "../../assets/Images/bannermain.png";
 import Image from "../../assets/Images/banner2.png";
+import Instagram from "../../assets/Images/instagram.png";
+import Facebook from "../../assets/Images/facebook.png";
+import Github from "../../assets/Images/github.png";
+import Linkedin from "../../assets/Images/linkedin.png";
+
 
 const Home = () => {
   const navigate = useNavigate();
+  const mediaData = [
+    {
+      image:Instagram,
+    },
+    {
+      image:Facebook,
+    } ,  {
+      image:Github,
+    }  , {
+      image:Linkedin,
+    }
+  ]
 
   const handleClick = () => {
-    navigate("/about"); // Change '/about-me' to the actual path of your "About Me" page
+    navigate("/about");
   };
 
   return (
     <div>
-      <div className="">
+      <div className="bg-[#F8F7F3]">
         {/* <div className="w-10/12 mx-auto py-10 grid md:grid-cols-2 ">
           <div className="flex flex-col gap-5 justify-center items-center">
             <div className="flex flex-col gap-5 text-center justify-center items-center">
@@ -191,87 +201,63 @@ const Home = () => {
             </div>
           </div>
         </div> */}
-        <div className=" bg-[#F8F7F3] grid grid-cols-2 items-center justify-center p-6">
-          <div className="grid grid-cols-2 gap-8 items-center max-w-5xl">
-            {/* Left Section */}
-            <div>
-              <div className="flex items-center  flex-col gap-5 ">
-                <h3 className=" pl-3 text-sm tracking-wider font-mono ">
-                  THIS IS ME
-                </h3>
-                <h1 className=" text-6xl font-bold  tracking-wider  font-montserrat ">
-                  MANISH GYAWALI
-                </h1>
-                <h2 className="text-[#60A5FA] font-mono animate-pulse tracking-wider text-lg">
-                  - Frontend Developer -
-                </h2>
-                <div className="flex items-center gap-5">
-                  <div className=" h-14 border border-s-gray-950"></div>
-                  <p className=" font-mono  ">
-                    {" "}
-                    Meet Me, a Frontend Developer crafting sleek designs and
-                    robust solutions. Explore my work and see ideas come to
-                    life!
-                  </p>
-                </div>
-              </div>
-
-              {/* Social Media Icons */}
-              <div className="flex space-x-1 mt-8">
-                {["yt", "ig", "fb", "x"].map((icon) => (
-                  <div
-                    key={icon}
-                    className="w-10 h-10 bg-gray-200 flex items-center justify-center rounded-full text-gray-700 font-semibold"
-                  >
-                    {icon}
-                  </div>
-                ))}
-              </div>
-
-              {/* Statistics */}
-              <div className="flex space-x-10 mt-10">
-                <div>
-                  <p className="text-3xl font-cursive font-bold">+250k</p>
-                  <p className="text-gray-700 text-sm mt-2">
-                    Videos that reaching a wide audience and give lasting
-                    impression
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl font-cursive font-bold">+800k</p>
-                  <p className="text-gray-700 text-sm mt-2">
-                    Hours watched, engaging storytelling that captivates viewers
-                  </p>
-                </div>
+        <div className=" grid grid-cols-2   px-9 ">
+          <div className=" gap-8 items-center py-16  ">
+            <div className="flex items-center   flex-col gap-5 ">
+              <h3 className=" pl-3 text-sm tracking-wider font-mono ">
+                THIS IS ME
+              </h3>
+              <h1 className=" text-6xl font-bold  tracking-wider font-montserrat ">
+                MANISH GYAWALI
+              </h1>
+              <h2 className="text-[#ED9728] font-semibold font-mono animate-bounce tracking-wider text-lg">
+                - Frontend Developer -
+              </h2>
+              <div className="flex items-center gap-5">
+                <div className=" h-12 w-1 bg-[#ED9728] border border-[#ED9728]"></div>
+                <p className=" font-mono ">
+                  {" "}
+                  Meet Me, a Frontend Developer crafting sleek designs and
+                  robust solutions. Explore my work and see ideas come to life!
+                </p>
               </div>
             </div>
 
-            {/* Right Section */}
+            <div className="flex space-x-10 mt-10">
+              <div>
+                <p className="text-3xl font-cursive font-bold">+250k</p>
+                <p className="text-gray-700 text-sm mt-2">
+                  Websites that reaching a wide audience and give lasting
+                  impression
+                </p>
+              </div>
+              <div>
+                <p className="text-3xl font-cursive font-bold">+800k</p>
+                <p className="text-gray-700 text-sm mt-2">
+                  Hours watched, engaging storytelling that captivates viewers
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-3 mt-5">
+              {mediaData.map((val,i)=>(
+                <div key={i}>
+                  <img src={val.image} alt="" className="h-[25px] transition-transform duration-300 hover:scale-105" />
+                </div>
+              ))}
+            </div>
           </div>
-            <div className="">
-              <img src={Banner} alt="Camera User" className="rounded-lg w-[400px] " />
-            </div>
+          <div className="ml-24 py-5">
+            <img
+              src={Banner}
+              alt="Camera User"
+              className="rounded-lg h-[450px]  "
+            />
+          </div>
         </div>
       </div>
 
-      {/* <div className="relative">
-            <div className="absolute inset-0 flex flex-col justify-center items-center">
-              <h1 className="text-6xl font-bold">Manish Gyawali</h1>
-              <p className="text-xl">- full stack developer -</p>
-            </div>
-            <img
-              src={signature}
-              alt="signature"
-              className="opacity-10 h-[600px] w-[1200px] object-cover"
-            />
-          </div> */}
       <Aboutme />
-      {/* <Service /> */}
       <CountUps />
-      {/* <Testimonial />
-      <Projects />
-      <Pricing />
-      <Blog /> */}
     </div>
   );
 };
