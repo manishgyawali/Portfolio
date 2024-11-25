@@ -226,14 +226,14 @@ const Home = () => {
             <div className="flex space-x-10 mt-10">
               <div>
                 <p className="text-3xl font-cursive font-bold">+250k</p>
-                <p className="text-gray-700 text-sm mt-2">
+                <p className="text-gray-700 text-sm mt-2 font-sans">
                   Websites that reaching a wide audience and give lasting
                   impression
                 </p>
               </div>
               <div>
                 <p className="text-3xl font-cursive font-bold">+800k</p>
-                <p className="text-gray-700 text-sm mt-2">
+                <p className="text-gray-700 text-sm mt-2 font-sans">
                   Hours watched, engaging storytelling that captivates viewers
                 </p>
               </div>

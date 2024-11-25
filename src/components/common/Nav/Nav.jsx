@@ -92,14 +92,15 @@ const Nav = () => {
     <nav className="shadow-md sticky top-0 bg-[#F8F7F3]">
       <div className="flex justify-between items-center py-3 cursor-pointer w-11/12 mx-auto">
         <div>
-          <img  onClick={handleClick} src={Signature} alt=""  className="h-[46px]"/>
+          <h1 className="font-bold text-orange-400">PORTFOLIO</h1>
+          {/* <img  onClick={handleClick} src={Signature} alt=""  className="h-[46px]"/> */}
 
         </div>
         <div className="">
           <ul className="flex gap-7 text-xs cursor-pointer">
             {/* HOME */}
             <Link to={"/"}>
-              <span className="uppercase text-orange-400 font-semibold">HOME</span>
+              <span className=" text-orange-400 font-semibold">HOME</span>
             </Link>
 
             {/* ABOUT */}

@@ -8,7 +8,7 @@ import Image from "../../assets/Images/banner2.png";
 const About = () => {
   return (
     <div>
-      <div className="p-24 text-center flex flex-col gap-5 bg-gradient-to-r from-[#7b5eea] to-[#56c1ff]">
+      <div className="p-24 text-center flex flex-col gap-5 bg-gradient-to-r from-[#ed9728] to-[#de56ff]">
         <h1 className="text-4xl font-semibold text-white">ABOUT ME</h1>
         <div className="text-sm text-white flex gap-3 items-center justify-center">
           <button>Home</button>
@@ -17,8 +17,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-10">
-        <div className="flex items-center gap-5 py-5 w-10/12 mx-auto text-sm text-gray-500">
+      <div className="flex flex-col gap-10 bg-[#F8F7F3]">
+        <div className="flex items-center gap-5 py-5 w-11/12 mx-auto text-sm text-gray-500">
           <p className="text-lg">
             Here, I focus on a range of items and features that we use in life
             without giving them a second thought. such as Coca Cola. Dolor sit
