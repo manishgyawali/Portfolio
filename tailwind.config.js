@@ -20,6 +20,7 @@ export default {
         upDown: 'upDown 1.5s ease-in-out infinite',
       },
       
+      
     },
   },
   plugins: [],

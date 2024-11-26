@@ -111,7 +111,7 @@ const About = () => {
             </h1>
             <h1 className=" w-16 bg-[#ED9728] border border-[#ED9728]"></h1>
           </div>
-          <div className="grid grid-cols-2     gap-5">
+          <div className="grid md:grid-cols-2 gap-5">
             {skills.map((val, i) => (
               <div
                 key={i}
@@ -120,7 +120,7 @@ const About = () => {
                 <h1 className="text-xl font-mono font-semibold px-10 text-gray-700">
                   {val.category}:
                 </h1>
-                <div className="grid grid-cols-5 px-6">
+                <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 px-6">
                   {val.items.map((itemData, index) => (
                     <div
                       key={i}
@@ -170,7 +170,7 @@ const About = () => {
             </h1>
             <h1 className=" w-16 bg-[#ED9728] border border-[#ED9728]"></h1>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8  px-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8  px-5">
             <div className="border border-gray-200 shadow-lg rounded-lg bg-white px-8 pb-8 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl">
               <div className="grid items-center justify-center">
                 <img

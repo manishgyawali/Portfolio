@@ -33,13 +33,13 @@ const Home = () => {
     <div>
       <div className="bg-[#F8F7F3]">
      
-        <div className=" grid grid-cols-2 py-5  px-9 ">
-          <div className=" gap-8 items-center py-16  ">
+        <div className=" grid lg:grid-cols-2 py-5  px-9 ">
+          <div className="  items-center py-16  ">
             <div className="flex items-center   flex-col gap-3 ">
               <h3 className=" pl-3 text-sm tracking-wider font-mono ">
                 THIS IS ME
               </h3>
-              <h1 className=" text-6xl font-bold  tracking-wider font-montserrat ">
+              <h1 className="text-3xl md:text-6xl font-bold  tracking-wider font-montserrat ">
                 MANISH GYAWALI
               </h1>
               <h2 className="text-[#ED9728] font-semibold font-mono animate-bounce tracking-wider text-lg">
@@ -78,11 +78,11 @@ const Home = () => {
               ))}
             </div>
           </div>
-          <div className="ml-24 py-5">
+          <div className="md:items-center flex justify-center lg:ml-24 md:py-5">
             <img
               src={Banner}
               alt="Camera User"
-              className="rounded-lg h-[450px]  "
+              className="rounded-lg md:h-[450px]  "
             />
           </div>
         </div>
