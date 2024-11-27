@@ -42,7 +42,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="bg-gray-50 py-24 flex flex-col gap-20">
+    <div className="bg-[#F8F7F3] py-24 flex flex-col gap-20">
       <div className="items-center justify-center text-center flex flex-col gap-3  w-11/12 mx-auto">
         <h1 className="font-semibold text-4xl">Latest posts from our blog</h1>
         <p className="w-7/12 text-gray-400">

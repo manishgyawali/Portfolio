@@ -55,7 +55,8 @@ const Projects = () => {
   ];
 
   return (
-    <div className="w-11/12 mx-auto py-24 flex flex-col gap-8">
+   <div className="bg-[#F8F7F3]">
+     <div className="w-11/12 mx-auto  py-24 flex flex-col gap-8">
       <div className="flex flex-col gap-20">
         <div className="items-center justify-center text-center flex flex-col gap-3">
           <h1 className="font-semibold text-4xl">Our Latest Featured Projects</h1>
@@ -76,13 +77,13 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
         {projectData.map((project, i) => (
           <div
             key={i}
             className="relative flex flex-col gap-3 group overflow-hidden rounded-md shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
-            <div className="relative overflow-hidden h-[200px]">
+            <div className="relative overflow-hidden h-[180px]">
               <img
                 src={project.image}
                 alt=""
@@ -117,6 +118,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
+   </div>
   );
 };
 

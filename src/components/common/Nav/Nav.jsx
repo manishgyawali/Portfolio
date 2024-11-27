@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Signature from "../../../assets/Images/signature.png"
-import { useNavigate } from 'react-router-dom';
-import { styled } from '@mui/material/styles';
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+import Signature from "../../../assets/Images/signature.png";
+import { useNavigate } from "react-router-dom";
+import { styled } from "@mui/material/styles";
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Switch from "@mui/material/Switch";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 
-
-
+import ThemeModeProvider from "@master/theme-mode.react";
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -18,60 +17,59 @@ const IOSSwitch = styled((props) => (
   width: 42,
   height: 26,
   padding: 0,
-  '& .MuiSwitch-switchBase': {
+  "& .MuiSwitch-switchBase": {
     padding: 0,
     margin: 2,
-    transitionDuration: '300ms',
-    '&.Mui-checked': {
-      transform: 'translateX(16px)',
-      color: '#fff',
-      '& + .MuiSwitch-track': {
-        backgroundColor: '#FCB143',
+    transitionDuration: "300ms",
+    "&.Mui-checked": {
+      transform: "translateX(16px)",
+      color: "#fff",
+      "& + .MuiSwitch-track": {
+        backgroundColor: "#FCB143",
         opacity: 1,
         border: 0,
-        ...theme.applyStyles('dark', {
-          backgroundColor: '#2ECA45',
+        ...theme.applyStyles("dark", {
+          backgroundColor: "#2ECA45",
         }),
       },
-      '&.Mui-disabled + .MuiSwitch-track': {
+      "&.Mui-disabled + .MuiSwitch-track": {
         opacity: 0.5,
       },
     },
-    '&.Mui-focusVisible .MuiSwitch-thumb': {
-      color: '#33cf4d',
-      border: '6px solid #fff',
+    "&.Mui-focusVisible .MuiSwitch-thumb": {
+      color: "#33cf4d",
+      border: "6px solid #fff",
     },
-    '&.Mui-disabled .MuiSwitch-thumb': {
+    "&.Mui-disabled .MuiSwitch-thumb": {
       color: theme.palette.grey[100],
-      ...theme.applyStyles('dark', {
+      ...theme.applyStyles("dark", {
         color: theme.palette.grey[600],
       }),
     },
-    '&.Mui-disabled + .MuiSwitch-track': {
+    "&.Mui-disabled + .MuiSwitch-track": {
       opacity: 0.7,
-      ...theme.applyStyles('dark', {
+      ...theme.applyStyles("dark", {
         opacity: 0.3,
       }),
     },
   },
-  '& .MuiSwitch-thumb': {
-    boxSizing: 'border-box',
+  "& .MuiSwitch-thumb": {
+    boxSizing: "border-box",
     width: 22,
     height: 22,
   },
-  '& .MuiSwitch-track': {
+  "& .MuiSwitch-track": {
     borderRadius: 26 / 2,
-    backgroundColor: '#E9E9EA',
+    backgroundColor: "#E9E9EA",
     opacity: 1,
-    transition: theme.transitions.create(['background-color'], {
+    transition: theme.transitions.create(["background-color"], {
       duration: 500,
     }),
-    ...theme.applyStyles('dark', {
-      backgroundColor: '#39393D',
+    ...theme.applyStyles("dark", {
+      backgroundColor: "#39393D",
     }),
   },
 }));
-
 
 const Nav = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -80,12 +78,12 @@ const Nav = () => {
     setShowDropdown(true);
     setTimeout(() => {
       setShowDropdown(false);
-    }, 2000); 
+    }, 2000);
   };
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/'); // Change '/about-me' to the actual path of your "About Me" page
+    navigate("/"); // Change '/about-me' to the actual path of your "About Me" page
   };
 
   return (
@@ -94,7 +92,6 @@ const Nav = () => {
         <div>
           <h1 className="font-bold text-orange-400">PORTFOLIO</h1>
           {/* <img  onClick={handleClick} src={Signature} alt=""  className="h-[46px]"/> */}
-
         </div>
         <div className="">
           <ul className="flex gap-7 text-xs cursor-pointer">
@@ -155,7 +152,6 @@ const Nav = () => {
                     <li className="px-5 py-2 hover:text-[#60A5FA]">
                       <Link to={"/blog/category-2"}>Blog Single</Link>
                     </li>
-                  
                   </ul>
                 </div>
               )}
@@ -179,13 +175,11 @@ const Nav = () => {
           </ul>
         </div>
         <FormGroup>
-      
-      <FormControlLabel
-        control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
-        label=""
-      />
-     
-    </FormGroup>
+          <FormControlLabel
+            control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
+            label=""
+          />
+        </FormGroup>
       </div>
     </nav>
   );

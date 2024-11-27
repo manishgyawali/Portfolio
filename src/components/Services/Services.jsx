@@ -49,7 +49,7 @@ const Service = () => {
   ];
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-[#F8F7F3]">
       <div className="w-11/12 mx-auto py-24 flex flex-col gap-15 ">
         <div className=" items-center justify-center text-center flex flex-col gap-3">
           <h1 className="font-semibold text-4xl">My Offered Services</h1>

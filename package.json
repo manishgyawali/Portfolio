@@ -14,6 +14,7 @@
     "@emotion/styled": "^11.13.5",
     "@fontsource/montserrat": "^5.1.0",
     "@fontsource/playfair-display": "^5.1.0",
+    "@master/theme-mode.react": "^1.1.1",
     "@mui/material": "^6.1.8",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
@@ -21,7 +22,8 @@
     "react-icons": "^5.3.0",
     "react-multi-carousel": "^2.8.5",
     "react-router-dom": "^6.26.2",
-    "react-tsparticles": "^2.12.2"
+    "react-tsparticles": "^2.12.2",
+    "theme-mode": "^1.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

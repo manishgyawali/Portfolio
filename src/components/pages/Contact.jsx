@@ -7,7 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col bg-[#F8F7F3] gap-10">
       <div className="p-24  flex flex-col gap-5 text-center bg-gradient-to-r from-[#7b5eea] to-[#56c1ff]">
         <h1 className="text-4xl font-semibold text-white">CONTACT</h1>
         <div className="text-sm text-white flex gap-3 items-center justify-center">

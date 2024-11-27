@@ -43,7 +43,8 @@ const PricingH = () => {
     },
   ];
   return (
-    <div className="w-11/12 mx-auto py-24 flex flex-col gap-24 ">
+   <div className="bg-[#F8F7F3]">
+     <div className="w-11/12  mx-auto py-24 flex flex-col gap-24 ">
       <div className=" items-center justify-center text-center flex flex-col gap-3">
         <h1 className="font-semibold text-4xl">Choose Your Plan</h1>
         <p className="w-7/12 text-gray-400 ">
@@ -55,7 +56,7 @@ const PricingH = () => {
         {pricingData.map((val, i) => (
           <div
             key={i}
-            className="flex flex-col group gap-10 items-center text-center py-14 hover:bg-gradient-to-r hover:from-[#ed9728] hover:to-[#de56ff] transition-all delay-100 duration-2000 ease-in-out "
+            className="flex flex-col group gap-10 items-center text-center py-14 hover:bg-gradient-to-r hover:from-[#ed9728] hover:to-[#de56ff] transition-all delay-1000 duration-1000 ease-in-out "
           >
             <div className="flex bg-[#EDEFFF] border-[30px] border-[#E2E5FF] h-40 w-40 rounded-full items-center justify-center text-4xl  ">
               {val.id}
@@ -84,6 +85,7 @@ const PricingH = () => {
         ))}
       </div>
     </div>
+   </div>
   );
 };
 
