@@ -9,7 +9,12 @@ import Switch from "@mui/material/Switch";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
+
+
 import ThemeModeProvider from "@master/theme-mode.react";
+import { RiMenu3Fill } from "react-icons/ri";
+
+// const [Menu,setMenu] =  useState(false);
 
 const IOSSwitch = styled((props) => (
   <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -94,7 +99,7 @@ const Nav = () => {
           {/* <img  onClick={handleClick} src={Signature} alt=""  className="h-[46px]"/> */}
         </div>
         <div className="">
-          <ul className="flex gap-7 text-xs cursor-pointer">
+          <ul className="hidden lg:flex gap-7 text-xs cursor-pointer">
             {/* HOME */}
             <Link to={"/"}>
               <span className=" text-orange-400 font-semibold">HOME</span>
@@ -174,12 +179,19 @@ const Nav = () => {
             </div>
           </ul>
         </div>
-        <FormGroup>
-          <FormControlLabel
-            control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
-            label=""
-          />
-        </FormGroup>
+        <div className="flex items-center">
+          <FormGroup>
+            <FormControlLabel
+              control={<IOSSwitch sx={{ m: 1 }} defaultChecked />}
+              label=""
+            />
+          </FormGroup>
+          {/* <div className="lg:hidden text-orange-400">
+            <RiMenu3Fill onClick={()=>{
+              setMenu(true)
+            }}  className="text-3xl text-customgreen" />
+          </div> */}
+        </div>
       </div>
     </nav>
   );

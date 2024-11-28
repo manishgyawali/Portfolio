@@ -8,7 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const Contact = () => {
   return (
     <div className="flex flex-col bg-[#F8F7F3] gap-10">
-      <div className="p-24  flex flex-col gap-5 text-center bg-gradient-to-r from-[#7b5eea] to-[#56c1ff]">
+      <div className="p-24  flex flex-col gap-5 text-center bg-gradient-to-r from-[#ed9728] to-[#de56ff]">
         <h1 className="text-4xl font-semibold text-white">CONTACT</h1>
         <div className="text-sm text-white flex gap-3 items-center justify-center">
           <button>Home</button><FaArrowRightLong /><button>Contact</button>
@@ -26,23 +26,23 @@ const Contact = () => {
       </div>
       <div className="grid grid-cols-3 gap-14 w-11/12 mx-auto">
         {/* Contact Information */}
-        <div className="grid gap-5">
+        <div className="grid tracking-wide gap-5">
           <div className="flex items-center gap-7">
-            <IoIosHome className="text-3xl text-blue-400" />
+            <IoIosHome className="text-3xl text-[#ed9728]" />
             <div>
               <h1>Butwal, Devinagar</h1>
               <h2 className="text-gray-500">4343 Kalikanagar Road</h2>
             </div>
           </div>
           <div className="flex items-center gap-7">
-            <IoCallOutline className="text-3xl text-blue-400" />
+            <IoCallOutline className="text-3xl text-[#ed9728]" />
             <div>
               <h1>9826472008</h1>
               <h2 className="text-gray-500">Mon to Fri 9am to 6 pm</h2>
             </div>
           </div>
           <div className="flex items-center gap-7">
-            <AiTwotoneMail className="text-3xl text-blue-400" />
+            <AiTwotoneMail className="text-3xl text-[#ed9728]" />
             <div>
               <h1>manishgyawali345@gmail.com</h1>
               <h2 className="text-gray-500">Send us your query anytime!</h2>
@@ -55,17 +55,17 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Enter your name"
-            className="border border-gray-400 px-5 py-2"
+            className="border tracking-wider border-gray-400 px-5 py-2"
           />
           <input
             type="text"
             placeholder="Enter email address"
-            className="border border-gray-400 px-5 py-2"
+            className="border tracking-wider border-gray-400 px-5 py-2"
           />
           <input
             type="text"
             placeholder="Enter subject"
-            className="border border-gray-400 px-5 py-2"
+            className="border tracking-wider border-gray-400 px-5 py-2"
           />
         </div>
 
@@ -74,14 +74,14 @@ const Contact = () => {
           <input
             type="text"
             placeholder="Enter Message"
-            className="border border-gray-400 px-16 py-24"
+            className="border tracking-wider border-gray-400 px-16 py-24"
           />
         </div>
       </div>
 
       {/* Send Message Button */}
       <div className="flex w-11/12 mx-auto justify-end pb-10 ">
-        <button className="bg-blue-400 text-white py-2 px-5 hover:transition">
+        <button className="bg-gradient-to-r from-[#ed9728] to-[#de56ff] text-white py-3 rounded px-5 hover:transition">
           SEND MESSAGE
         </button>
       </div>
