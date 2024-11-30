@@ -52,7 +52,7 @@ const Projects = () => {
       liveLink: "https://your-live-link.com",
       codeLink: "https://github.com/your-repo",
     },
-  ];
+  ]; 
 
   return (
    <div className="bg-[#F8F7F3]">

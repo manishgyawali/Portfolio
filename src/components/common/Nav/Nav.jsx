@@ -186,11 +186,11 @@ const Nav = () => {
               label=""
             />
           </FormGroup>
-          {/* <div className="lg:hidden text-orange-400">
+          <div className="lg:hidden text-orange-400">
             <RiMenu3Fill onClick={()=>{
               setMenu(true)
             }}  className="text-3xl text-customgreen" />
-          </div> */}
+          </div>
         </div>
       </div>
     </nav>
