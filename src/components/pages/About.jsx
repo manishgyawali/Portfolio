@@ -87,7 +87,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-16 bg-[#F8F7F3]">
+      <div className="flex flex-col gap-16 animate-reveal bg-[#F8F7F3]">
         <div className="flex items-center gap-5 pt-5 w-11/12 mx-auto text-sm text-gray-500">
           <p className="text-lg font-serif">
             Here, I focus on a range of items and features that we use in life

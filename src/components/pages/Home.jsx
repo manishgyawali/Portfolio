@@ -34,8 +34,8 @@ const Home = () => {
       <div className="bg-[#F8F7F3]">
      
         <div className=" grid lg:grid-cols-2 py-5  px-9 ">
-          <div className="  items-center py-16  ">
-            <div className="flex items-center   flex-col gap-3 ">
+          <div className="  items-center py-16 animate-reveal ">
+            <div className="flex items-center    flex-col gap-3 ">
               <h3 className=" pl-3 text-sm tracking-wider font-mono ">
                 THIS IS ME
               </h3>
@@ -82,7 +82,7 @@ const Home = () => {
             <img
               src={Banner}
               alt="Camera User"
-              className="rounded-lg md:h-[450px]  "
+              className="rounded-lg md:h-[450px] animate-reveal  "
             />
           </div>
         </div>

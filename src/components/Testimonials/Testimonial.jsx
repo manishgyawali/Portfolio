@@ -54,7 +54,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <div className="bg-[#F8F7F3] py-24">
+    <div className="bg-[#F8F7F3] animate-reveal py-24">
       <div className=" flex flex-col gap-15">
         <div className="w-11/12 mx-auto text-center flex flex-col gap-3">
           <h1 className="font-semibold text-4xl">Client’s Feedback About Me</h1>

@@ -43,7 +43,7 @@ const PricingH = () => {
     },
   ];
   return (
-   <div className="bg-[#F8F7F3]">
+   <div className="bg-[#F8F7F3] animate-reveal">
      <div className="w-11/12  mx-auto py-24 flex flex-col gap-24 ">
       <div className=" items-center justify-center text-center flex flex-col gap-3">
         <h1 className="font-semibold text-4xl">Choose Your Plan</h1>

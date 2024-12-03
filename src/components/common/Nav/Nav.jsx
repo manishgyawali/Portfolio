@@ -92,7 +92,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="shadow-md sticky top-0 bg-[#F8F7F3]">
+    <nav className="shadow-md sticky z-10 top-0 bg-[#F8F7F3]">
       <div className="flex  justify-between items-center py-3 cursor-pointer w-11/12 mx-auto">
         <div>
           <h1 className="font-bold text-orange-400">PORTFOLIO</h1>
