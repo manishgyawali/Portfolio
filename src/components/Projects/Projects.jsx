@@ -18,7 +18,7 @@ const Projects = () => {
     { image: SS3, name: "Portfolio", type: "Javascript", liveLink: "#", codeLink: "#" },
     { image: SS4, name: "Weather-App", type: "Frontend", liveLink: "#", codeLink: "#" },
     { image: SS5, name: "Admin Dashboard", type: "React", liveLink: "#", codeLink: "#" },
-    { image: SS6, name: "Admin Dashboard", type: "NextJs", liveLink: "#", codeLink: "#" },
+    { image: SS6, name: "Gies Consultancy Site", type: "NextJs", liveLink: "#", codeLink: "#" },
 
    
   ];
