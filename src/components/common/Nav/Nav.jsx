@@ -1,17 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Signature from "../../../assets/Images/signature.png";
-import { useNavigate } from "react-router-dom";
 import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-
-
-
-import ThemeModeProvider from "@master/theme-mode.react";
 import { RiMenu3Fill } from "react-icons/ri";
 
 // const [Menu,setMenu] =  useState(false);
@@ -78,6 +70,7 @@ const IOSSwitch = styled((props) => (
 
 const Nav = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+ 
 
   const handleMouseEnter = () => {
     setShowDropdown(true);
@@ -85,18 +78,15 @@ const Nav = () => {
       setShowDropdown(false);
     }, 2000);
   };
-  const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/"); // Change '/about-me' to the actual path of your "About Me" page
-  };
+
+
 
   return (
     <nav className="shadow-md sticky z-10 top-0 bg-[#F8F7F3]">
       <div className="flex  justify-between items-center py-3 cursor-pointer w-11/12 mx-auto">
         <div>
           <h1 className="font-bold text-orange-400">PORTFOLIO</h1>
-          {/* <img  onClick={handleClick} src={Signature} alt=""  className="h-[46px]"/> */}
         </div>
         <div className="">
           <ul className="hidden lg:flex gap-7 text-xs cursor-pointer">
