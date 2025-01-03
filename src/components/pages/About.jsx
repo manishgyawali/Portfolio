@@ -1,5 +1,5 @@
 import React from "react";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaHome } from "react-icons/fa";
 import {
   SiRedux,
   SiBootstrap,
@@ -56,6 +56,7 @@ const skills = [
   },
 ];
 
+
 const About = () => {
   const hobbies = [
     {
@@ -78,14 +79,15 @@ const About = () => {
   ];
   return (
     <div>
-      <div className="p-24 text-center flex flex-col gap-5 bg-gradient-to-r from-[#ed9728] to-[#de56ff]">
-        <h1 className="text-4xl font-semibold text-white">ABOUT ME</h1>
-        <div className="text-sm text-white flex gap-3 items-center justify-center">
-          <button>Home</button>
-          <FaArrowRightLong />
-          <button>About Me</button>
-        </div>
-      </div>
+        <div className="py-16 text-center flex text-black flex-col gap-5 bg-[#f0f0f0]">
+             <h1 className="text-3xl font-semibold ">ABOUT ME</h1>
+             <div className=" text-[#6e6e6e] text-xs flex gap-3 items-center justify-center">
+               <FaHome className="text-lg" />
+               <FaArrowRightLong />
+               <button className="font-semibold ">ABOUT ME</button>
+        
+             </div>
+           </div>
 
       <div className="flex flex-col gap-16 animate-reveal bg-[#F8F7F3]">
         <div className="flex items-center gap-5 pt-5 w-11/12 mx-auto text-sm text-gray-500">

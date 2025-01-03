@@ -3,7 +3,6 @@ import Aboutme from "../Aboutme/Aboutme";
 import CountUps from "./../CountUp/CountUps";
 import { useNavigate } from "react-router-dom";
 import Banner from "../../assets/Images/bannermain.png";
-import Image from "../../assets/Images/banner2.png";
 import Instagram from "../../assets/Images/instagram.png";
 import Facebook from "../../assets/Images/facebook.png";
 import Github from "../../assets/Images/github.png";

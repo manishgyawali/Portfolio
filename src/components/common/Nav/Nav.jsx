@@ -84,7 +84,7 @@ const Nav = () => {
 
   return (
     <nav className="shadow-md sticky z-10 top-0 bg-[#F8F7F3]">
-      <div className="flex  justify-between items-center py-3 cursor-pointer w-11/12 mx-auto">
+      <div className="flex  justify-between items-center py-3 cursor-pointer w-10/12 mx-auto">
         <div>
           <h1 className="font-bold text-orange-400">PORTFOLIO</h1>
         </div>
@@ -119,13 +119,7 @@ const Nav = () => {
               <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-orange-400 absolute bottom-[-5px] left-0" />
             </div>
 
-            {/* PRICING */}
-            <div className="relative group cursor-pointer  hover:text-black">
-              <Link to={"/pricing"}>
-                <span className="uppercase">PRICING</span>
-              </Link>
-              <span className="block w-0 group-hover:w-8/12 transition-all duration-300 ease-out h-0.5 bg-orange-400 absolute bottom-[-5px] left-0" />
-            </div>
+    
 
             {/* BLOG (with Dropdown) */}
             <div
